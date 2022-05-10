@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>우유조아</title>
+  <style>
+    ul {
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 20px;
+      list-style: none;
+      text-align: center;
+      color: black;
+      font-size: 100px;
+      padding: 100px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+    <li>우유조아</li>
+  </ul>
+  <div id="milk" style="position: fixed;bottom: 10px;right: 10px;z-index: 10000;" onclick="location.href = 'https://www.youtube.com/channel/UCqlypMURlP7l6334cdwWaBw'">made by <strong>MILK</strong></div>
+  <script>
+    (() => {
+      document.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          document.querySelector('ul').appendChild(document.createElement('li')).textContent = "우유조아";
+        }
+      })
+    })();
+
+    function detectMobileDevice(agent) {
+      const mobileRegex = [
+        /Android/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+      ];
+
+      return mobileRegex.some(mobile => agent.match(mobile));
+    }
+    var isMobile = detectMobileDevice(window.navigator.userAgent);
+    if (isMobile) location.href = 'http://m.wmilk.kro.kr';
+    if ("https://wmilk.kro.kr/" != window.location.href) while(true) alert("!!!");
+  </script>
+</body>
+
+</html>
