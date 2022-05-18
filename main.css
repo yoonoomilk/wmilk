@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.up {
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.down {
+  font-size: 1.3em;
+}
+
+#intro {
+  margin-top: 10vh;
+}
+
+ul * {
+  margin-bottom: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#link {
+  margin-top: 80vh;
+}
+
+.pair {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#calc {
+  width: 80vw;
+  height: 55vh;
+}
+
+#clock {
+  width: 60vw;
+  height: 60vh;
+}
+
+#paint {
+  width: 50vw;
+  height: 50vh;
+}
+
+.name {
+  zoom: 1.1;
+  display: inline;
+  font-weight: bold;
+  color: #606060;
+}
+
+#milk {
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  z-index: 10000;
+}
