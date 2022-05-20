@@ -1,3 +1,4 @@
+/*
 function detectMobileDevice(agent) {
   const mobileRegex = [
     /Android/i,
@@ -12,3 +13,4 @@ function detectMobileDevice(agent) {
 }
 var isMobile = detectMobileDevice(window.navigator.userAgent);
 if (isMobile) location.href = 'https://m.wmilk.kro.kr';
+*/
