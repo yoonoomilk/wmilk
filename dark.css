@@ -8,9 +8,10 @@
   }
   
   .name {
-    zoom: 1.1;
-    display: inline;
-    font-weight: bold;
     color: #606060;
+  }
+  
+  iframe body {
+    background-color: white;
   }
 }
