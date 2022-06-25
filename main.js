@@ -14,4 +14,7 @@ function detectMobileDevice(agent) {
 var isMobile = detectMobileDevice(window.navigator.userAgent);
 if (isMobile) location.href = 'https://m.wmilk.kro.kr';
 */
-if(window.location != window.parent.location) document.body.style.display = "none";
+if(window.location != window.parent.location) {
+  document.body.style.display = "none";
+  docuemnt.getElementById("noiframe").style.display = "block";
+}
